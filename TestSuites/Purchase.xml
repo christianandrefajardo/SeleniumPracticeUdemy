@@ -8,6 +8,10 @@
 		</run>
 	</groups>
 
+	<listeners>
+		<listener class-name="udemymavenpractice.TestComponents.Listeners" />
+	</listeners>
+
 	<test thread-count="5" name="Submit Order Test">
 		<classes>
 			<class name="udemymavenpractice.Tests.SubmitOrderTest" />
