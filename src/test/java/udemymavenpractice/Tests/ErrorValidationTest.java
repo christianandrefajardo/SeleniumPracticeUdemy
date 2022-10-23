@@ -20,7 +20,8 @@ public class ErrorValidationTest extends BaseTest{
 		String password = "123Password123!";
 		//Login to Application
 		ProductCatalogPage productPage = login.login(username, password);
-		Assert.assertEquals("Incorrect email //or password.", login.getErrorMessage());
+		// Intentionally failing for testing Extent Reports
+		Assert.assertEquals("Incorrect email or password.", login.getErrorMessage());
 	}
 
 	@Test

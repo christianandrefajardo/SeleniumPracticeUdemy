@@ -10,10 +10,13 @@ import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -34,14 +37,26 @@ public class BaseTest {
 		FileInputStream inStream = new FileInputStream(
 				System.getProperty("user.dir") + "/src/main/java/udemymaven/practice/Resources/GlobalData.properties");
 		properties.load(inStream);
-		String browserName = properties.getProperty("browser");
+		// Fetching parameters when executing via Command Prompt
+		String browserName = System.getProperty("browser") !=null ? System.getProperty("browser") : properties.getProperty("browser");
+		//properties.getProperty("browser");
 
-		if (browserName.equalsIgnoreCase("chrome")) {
+		if (browserName.contains("chrome")) {
+		    ChromeOptions options = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-
-		} else {
-			System.out.println("Invalid browser");
+			if(browserName.contains("headless")) {
+			    // Adding options for headless execution
+			    options.addArguments("headless");
+			}
+			driver = new ChromeDriver(options);
+			// ensure running in fullscreen via headless
+			driver.manage().window().setSize(new Dimension(1440,900));
+		} else if(browserName.equalsIgnoreCase("edge")){
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}
+		else {
+		    System.out.println("No browsers available");
 		}
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();

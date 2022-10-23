@@ -1,207 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="7" passed="5" failed="1" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-16T21:23:32 GMT+09:00" name="Suite" finished-at="2022-10-16T21:24:58 GMT+09:00" duration-ms="86329">
+  <suite started-at="2022-10-23T19:44:51 JST" name="Suite" finished-at="2022-10-23T19:44:58 JST" duration-ms="6749">
     <groups>
       <group name="ErrorHandling">
         <method signature="ErrorValidationTest.loginErrorValidation()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" name="loginErrorValidation" class="udemymavenpractice.Tests.ErrorValidationTest"/>
       </group> <!-- ErrorHandling -->
-      <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" name="submitOrder" class="udemymavenpractice.Tests.SubmitOrderTest"/>
-      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2022-10-16T21:23:32 GMT+09:00" name="Error Validation Test" finished-at="2022-10-16T21:24:12 GMT+09:00" duration-ms="40165">
+    <test started-at="2022-10-23T19:44:51 JST" name="Submit Order Test" finished-at="2022-10-23T19:44:51 JST" duration-ms="11">
+    </test> <!-- Submit Order Test -->
+    <test started-at="2022-10-23T19:44:51 JST" name="Error Validation Test" finished-at="2022-10-23T19:44:58 JST" duration-ms="6749">
       <class name="udemymavenpractice.Tests.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-16T21:23:32 GMT+09:00" name="launchApplication" finished-at="2022-10-16T21:23:38 GMT+09:00" duration-ms="6280" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-23T19:44:51 JST" name="launchApplication" finished-at="2022-10-23T19:44:57 JST" duration-ms="5853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="loginErrorValidation()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-16T21:23:38 GMT+09:00" name="loginErrorValidation" finished-at="2022-10-16T21:23:39 GMT+09:00" duration-ms="596" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email //or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email //or password.]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at udemymavenpractice.Tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:23)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-23T19:44:57 JST" name="loginErrorValidation" finished-at="2022-10-23T19:44:57 JST" duration-ms="596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-16T21:23:39 GMT+09:00" name="tearDown" finished-at="2022-10-16T21:23:39 GMT+09:00" duration-ms="67" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-16T21:23:39 GMT+09:00" name="launchApplication" finished-at="2022-10-16T21:23:43 GMT+09:00" duration-ms="4593" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="loginErrorValidation()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-16T21:23:43 GMT+09:00" name="loginErrorValidation" finished-at="2022-10-16T21:23:44 GMT+09:00" duration-ms="585" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email //or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email //or password.]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at udemymavenpractice.Tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:23)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-16T21:23:45 GMT+09:00" name="tearDown" finished-at="2022-10-16T21:24:01 GMT+09:00" duration-ms="16170" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-16T21:24:01 GMT+09:00" name="launchApplication" finished-at="2022-10-16T21:24:05 GMT+09:00" duration-ms="4690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="productErrorValidation()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-16T21:24:05 GMT+09:00" name="productErrorValidation" finished-at="2022-10-16T21:24:12 GMT+09:00" duration-ms="6451" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-16T21:24:12 GMT+09:00" name="tearDown" finished-at="2022-10-16T21:24:12 GMT+09:00" duration-ms="52" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:udemymavenpractice.Tests.ErrorValidationTest@78452606]" started-at="2022-10-23T19:44:57 JST" name="tearDown" finished-at="2022-10-23T19:44:58 JST" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- udemymavenpractice.Tests.ErrorValidationTest -->
     </test> <!-- Error Validation Test -->
-    <test started-at="2022-10-16T21:23:32 GMT+09:00" name="Submit Order Test" finished-at="2022-10-16T21:24:58 GMT+09:00" duration-ms="86329">
-      <class name="udemymavenpractice.Tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:23:32 GMT+09:00" name="launchApplication" finished-at="2022-10-16T21:23:39 GMT+09:00" duration-ms="6758" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:23:39 GMT+09:00" name="submitOrder" data-provider="getData" finished-at="2022-10-16T21:23:46 GMT+09:00" duration-ms="7645" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Password123!, productName=ZARA COAT 3, username=christianandre@rahulshettyacademy.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:23:46 GMT+09:00" name="tearDown" finished-at="2022-10-16T21:24:02 GMT+09:00" duration-ms="16162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:24:02 GMT+09:00" name="launchApplication" finished-at="2022-10-16T21:24:07 GMT+09:00" duration-ms="4803" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:24:07 GMT+09:00" name="submitOrder" data-provider="getData" finished-at="2022-10-16T21:24:14 GMT+09:00" duration-ms="7355" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Iamking@000, productName=ADIDAS ORIGINAL, username=shetty@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:24:14 GMT+09:00" name="tearDown" finished-at="2022-10-16T21:24:31 GMT+09:00" duration-ms="16272" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:24:31 GMT+09:00" name="launchApplication" finished-at="2022-10-16T21:24:35 GMT+09:00" duration-ms="4447" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest(java.util.HashMap)[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:24:35 GMT+09:00" name="OrderHistoryTest" data-provider="getData" finished-at="2022-10-16T21:24:36 GMT+09:00" depends-on-methods="udemymavenpractice.Tests.SubmitOrderTest.submitOrder" duration-ms="953" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Password123!, productName=ZARA COAT 3, username=christianandre@rahulshettyacademy.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:24:36 GMT+09:00" name="tearDown" finished-at="2022-10-16T21:24:36 GMT+09:00" duration-ms="40" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:24:36 GMT+09:00" name="launchApplication" finished-at="2022-10-16T21:24:41 GMT+09:00" duration-ms="4629" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest(java.util.HashMap)[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:24:41 GMT+09:00" name="OrderHistoryTest" data-provider="getData" finished-at="2022-10-16T21:24:42 GMT+09:00" depends-on-methods="udemymavenpractice.Tests.SubmitOrderTest.submitOrder" duration-ms="981" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Iamking@000, productName=ADIDAS ORIGINAL, username=shetty@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:udemymavenpractice.Tests.SubmitOrderTest@69c81773]" started-at="2022-10-16T21:24:42 GMT+09:00" name="tearDown" finished-at="2022-10-16T21:24:58 GMT+09:00" duration-ms="16245" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- udemymavenpractice.Tests.SubmitOrderTest -->
-    </test> <!-- Submit Order Test -->
   </suite> <!-- Suite -->
 </testng-results>
